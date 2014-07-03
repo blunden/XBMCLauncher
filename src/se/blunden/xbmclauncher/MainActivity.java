@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	
-	private String activity = "org.xbmc.xbmc/org.xbmc.xbmc.Splash"; 
+	private String xbmcActivity = "org.xbmc.xbmc/org.xbmc.xbmc.Splash"; 
 	
 	private void launch()
 	{
@@ -18,10 +18,10 @@ public class MainActivity extends Activity {
 		
 		// Intent.makeMainActivity is only available in API level 11 and above
 		if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-			activityIntent = Intent.makeMainActivity(ComponentName.unflattenFromString(activity));
+			activityIntent = Intent.makeMainActivity(ComponentName.unflattenFromString(xbmcActivity));
 		} else {
 			activityIntent = new Intent(Intent.ACTION_MAIN);
-            activityIntent.setComponent(ComponentName.unflattenFromString(activity));
+            activityIntent.setComponent(ComponentName.unflattenFromString(xbmcActivity));
             activityIntent.addCategory(Intent.CATEGORY_LAUNCHER);
 		}
 		
@@ -31,7 +31,10 @@ public class MainActivity extends Activity {
 		}
 		catch (ActivityNotFoundException e)
 		{
-			Toast.makeText(this, "Activity " + activity + " not found", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, "Activity " + xbmcActivity + " not found. Resetting default launcher preference...", Toast.LENGTH_SHORT).show();
+			
+			// Reset the default launcher preference to avoid getting stuck with a non-working launcher
+			getPackageManager().clearPackagePreferredActivities(getPackageName());
 		}
 	}
 

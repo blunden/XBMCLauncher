@@ -3,17 +3,25 @@ package se.blunden.xbmclauncher;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	
-	private String xbmcActivity = "org.xbmc.xbmc/org.xbmc.xbmc.Splash"; 
+	private String xbmcActivity; 
 	
 	private void launch()
 	{
+		// Load preferences
+		SharedPreferences settings;
+		settings = getSharedPreferences("preferences", Context.MODE_PRIVATE);
+		
+		xbmcActivity = settings.getString("xbmc_variant", getString(R.string.xbmc_activity_default));
+		
 		Intent activityIntent;
 		
 		// Intent.makeMainActivity is only available in API level 11 and above
@@ -31,10 +39,10 @@ public class MainActivity extends Activity {
 		}
 		catch (ActivityNotFoundException e)
 		{
-			Toast.makeText(this, "Activity " + xbmcActivity + " not found. Resetting default launcher preference...", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, "Activity " + xbmcActivity + " not found. Launching settings activity...", Toast.LENGTH_SHORT).show();
 			
-			// Reset the default launcher preference to avoid getting stuck with a non-working launcher
-			getPackageManager().clearPackagePreferredActivities(getPackageName());
+			Intent launchSettings = new Intent(this, LauncherSettingsActivity.class);
+			startActivity(launchSettings);
 		}
 	}
 

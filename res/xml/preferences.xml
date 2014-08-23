@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+    <PreferenceCategory
+        android:title="@string/settings_category_basic_settings"
+        android:key="basic_settings_category">
+         
+        <ListPreference
+            android:key="xbmc_variant"
+            android:title="@string/settings_xbmc_variant_title"
+            android:summary="@string/settings_xbmc_variant_summary"
+            android:defaultValue="@string/xbmc_activity_default"
+            android:entries="@array/xbmcActivityNames"
+            android:entryValues="@array/xbmcActivityStrings" />   
+             
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/settings_category_troubleshooting"
+        android:key="troubleshooting_category">
+        
+        <Preference
+        	android:key="app_details"
+        	android:title="@string/settings_app_details_title"
+        	android:summary="@string/settings_app_details_summary">
+        	<intent
+            	android:action="android.settings.APPLICATION_DETAILS_SETTINGS"
+            	android:targetPackage="com.android.settings"
+            	android:data="package:se.blunden.xbmclauncher" />
+    	</Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

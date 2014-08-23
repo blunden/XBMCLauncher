@@ -8,17 +8,18 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
-import android.widget.Toast;
+import android.util.Log;
 
 public class MainActivity extends Activity {
 	
+	private static final String TAG = "XBMCLauncher";
 	private String xbmcActivity; 
 	
 	private void launch()
 	{
 		// Load preferences
 		SharedPreferences settings;
-		settings = getSharedPreferences("preferences", Context.MODE_PRIVATE);
+		settings = getSharedPreferences("se.blunden.xbmclauncher_preferences", Context.MODE_PRIVATE);
 		
 		xbmcActivity = settings.getString("xbmc_variant", getString(R.string.xbmc_activity_default));
 		
@@ -39,7 +40,7 @@ public class MainActivity extends Activity {
 		}
 		catch (ActivityNotFoundException e)
 		{
-			Toast.makeText(this, "Activity " + xbmcActivity + " not found. Launching settings activity...", Toast.LENGTH_SHORT).show();
+			Log.d(TAG, "Activity " + xbmcActivity + " not found. Launching settings activity...");
 			
 			Intent launchSettings = new Intent(this, LauncherSettingsActivity.class);
 			startActivity(launchSettings);

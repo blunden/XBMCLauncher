@@ -8,6 +8,7 @@
         <item name="xbmc_activity_name_plex">Plex</item>
         <item name="xbmc_activity_name_ouya">OUYA XBMC</item>
         <item name="xbmc_activity_name_spmc">SPMC</item>
+        <item name="xbmc_activity_name_wasser">Wasser XBMC</item>
     </string-array>
     
     <string-array name="xbmcActivityStrings">
@@ -17,6 +18,7 @@
         <item name="xbmc_activity_string_plex">com.plexapp.android/com.plexapp.plex.activities.MyPlexActivity</item>
         <item name="xbmc_activity_string_ouya">tv.ouya.xbmc/tv.ouya.xbmc.Splash</item>
         <item name="xbmc_activity_string_spmc">com.semperpax.spmc/com.semperpax.spmc.Splash</item>
+        <item name="xbmc_activity_string_wasser">org.wasser.xbmc/org.wasser.xbmc.Splash</item>
     </string-array>
     
 </resources>

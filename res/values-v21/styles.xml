@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppBaseTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        <item name="android:colorPrimary">@color/theme_primary</item>
+    	<item name="android:colorPrimaryDark">@color/theme_primary_dark</item>
+    	<item name="android:colorAccent">@color/theme_accent</item>
+    	<item name="android:textColorLink">@color/theme_accent</item>
+    	<item name="android:dialogTheme">@style/MaterialDialogTheme</item>
+    	<item name="android:alertDialogTheme">@style/MaterialDialogTheme</item>
+    	<item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="MaterialDialogTheme" parent="android:Theme.Material.Light.Dialog">
+    	<item name="android:colorPrimary">@color/theme_primary</item>
+    	<item name="android:colorPrimaryDark">@color/theme_primary_dark</item>
+    	<item name="android:colorAccent">@color/theme_accent</item>
+    </style>
+    
+
+</resources>

@@ -13,6 +13,6 @@
     <string name="settings_app_details_title">App details</string>
     <string name="settings_app_details_summary">Manage or uninstall XBMC Launcher via Settings</string>
     
-    <string name="xbmc_activity_default">org.xbmc.xbmc/org.xbmc.xbmc.Splash</string>
+    <string name="xbmc_activity_default">org.xbmc.kodi/org.xbmc.kodi.Splash</string>
 
 </resources>

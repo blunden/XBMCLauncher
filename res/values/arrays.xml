@@ -11,7 +11,9 @@
         <item name="xbmc_activity_name_spmc">SPMC</item>
         <item name="xbmc_activity_name_wasser">Wasser XBMC</item>
         <item name="xbmc_activity_name_tvmc">TVMC</item>
-        <item name="xbmc_activity_name_vidon">VidOn XBMC</item>
+        <item name="xbmc_activity_name_vidon_new">VidOn XBMC</item>
+        <item name="xbmc_activity_name_vidon">VidOn XBMC (Old)</item>
+        <item name="xbmc_activity_name_matricom">Matricom MediaCenter</item>
     </string-array>
     
     <string-array name="xbmcActivityStrings">
@@ -24,7 +26,9 @@
         <item name="xbmc_activity_string_spmc">com.semperpax.spmc/com.semperpax.spmc.Splash</item>
         <item name="xbmc_activity_string_wasser">org.wasser.xbmc/org.wasser.xbmc.Splash</item>
         <item name="xbmc_activity_string_tvmc">ag.tvaddons.xbmc/ag.tvaddons.xbmc.Splash</item>
-        <item name="xbmc_activity_string_vidon">org.vidonme.xbmc13/org.vidonme.xbmc13.Splash</item>
+        <item name="xbmc_activity_string_vidon_new">org.vidonme.xbmc13/org.vidonme.xbmc13.Splash</item>
+        <item name="xbmc_activity_string_vidon">org.vidonme.vidonme/org.vidonme.vidonme.Splash</item>
+        <item name="xbmc_activity_string_matricom">net.matricom.mediacenter/net.matricom.mediacenter.Splash</item>
     </string-array>
     
 </resources>

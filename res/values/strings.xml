@@ -14,8 +14,6 @@
     <string name="settings_app_details_summary">Manage or uninstall XBMC Launcher via Settings</string>
     <string name="settings_android_settings_title">Android settings</string>
     <string name="settings_android_settings_summary">Launch Android\'s main settings interface</string>
-    <string name="settings_android_tv_settings_title">Android TV settings</string>
-    <string name="settings_android_tv_settings_summary">Launch Android TV\'s main settings interface</string>
     
     <string name="xbmc_activity_default">org.xbmc.kodi/org.xbmc.kodi.Splash</string>
 

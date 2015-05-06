@@ -37,15 +37,6 @@
             	android:action="android.settings.SETTINGS"
             	android:targetPackage="com.android.settings" />
     	</Preference>
-    	
-        <Preference
-        	android:key="android_tv_settings"
-        	android:title="@string/settings_android_tv_settings_title"
-        	android:summary="@string/settings_android_tv_settings_summary">
-        	<intent
-            	android:action="android.settings.SETTINGS"
-            	android:targetPackage="com.android.tv.settings" />
-    	</Preference>
 
     </PreferenceCategory>
 

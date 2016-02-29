@@ -12,15 +12,14 @@ import android.util.Log;
 public class MainActivity extends Activity {
 	
 	private static final String TAG = "XBMCLauncher";
-	private String xbmcActivity; 
-	
-	private void launch()
+
+    private void launch()
 	{
 		// Load preferences
 		SharedPreferences settings;
 		settings = getSharedPreferences("se.blunden.xbmclauncher_preferences", Context.MODE_PRIVATE);
-		
-		xbmcActivity = settings.getString("xbmc_variant", getString(R.string.xbmc_activity_default));
+
+        String xbmcActivity = settings.getString("xbmc_variant", getString(R.string.xbmc_activity_default));
 		
 		// Build the Kodi/XBMC intent
         Intent activityIntent;
@@ -34,8 +33,7 @@ public class MainActivity extends Activity {
 		
 		try {
 			startActivity(activityIntent);
-			return;
-		}
+        }
 		catch (ActivityNotFoundException e)
 		{
 			Log.d(TAG, "Activity " + xbmcActivity + " not found. Launching settings activity...");

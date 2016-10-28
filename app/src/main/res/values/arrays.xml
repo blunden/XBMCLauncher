@@ -17,6 +17,7 @@
         <item name="xbmc_activity_name_vidon_new">VidOn XBMC</item>
         <item name="xbmc_activity_name_vidon">VidOn XBMC (Old)</item>
         <item name="xbmc_activity_name_matricom">Matricom MediaCenter</item>
+        <item name="xbmc_activity_name_wetek">WeTek Media Player</item>
     </string-array>
     
     <string-array name="xbmcActivityStrings">
@@ -35,6 +36,7 @@
         <item name="xbmc_activity_string_vidon_new">org.vidonme.xbmc13/org.vidonme.xbmc13.Splash</item>
         <item name="xbmc_activity_string_vidon">org.vidonme.vidonme/org.vidonme.vidonme.Splash</item>
         <item name="xbmc_activity_string_matricom">net.matricom.mediacenter/net.matricom.mediacenter.Splash</item>
+        <item name="xbmc_activity_string_wetek">com.wetek.mediaplayer/com.wetek.mediaplayer.Splash</item>
     </string-array>
     
 </resources>

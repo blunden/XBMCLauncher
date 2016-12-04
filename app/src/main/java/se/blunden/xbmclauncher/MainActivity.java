@@ -13,8 +13,7 @@ public class MainActivity extends Activity {
 	
 	private static final String TAG = "XBMCLauncher";
 
-    private void launch()
-	{
+    private void launch() {
 		// Load preferences
 		SharedPreferences settings;
 		settings = getSharedPreferences("se.blunden.xbmclauncher_preferences", Context.MODE_PRIVATE);
@@ -34,8 +33,7 @@ public class MainActivity extends Activity {
 		try {
 			startActivity(activityIntent);
         }
-		catch (ActivityNotFoundException e)
-		{
+		catch (ActivityNotFoundException e)	{
 			Log.d(TAG, "Activity " + xbmcActivity + " not found. Launching settings activity...");
 			
 			launchSettings();

@@ -38,8 +38,12 @@ public class MainActivity extends Activity {
 		{
 			Log.d(TAG, "Activity " + xbmcActivity + " not found. Launching settings activity...");
 			
-			Intent launchSettings = new Intent(this, LauncherSettingsActivity.class);
-			startActivity(launchSettings);
+			launchSettings();
+		}
+		catch (Exception e) {
+			Log.d(TAG, "Unable to launch " + xbmcActivity + " due to an exception. Launching settings activity...");
+
+			launchSettings();
 		}
 	}
 
@@ -47,5 +51,10 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		launch();
 		finish();
+	}
+
+	private void launchSettings() {
+		Intent launchSettings = new Intent(this, LauncherSettingsActivity.class);
+		startActivity(launchSettings);
 	}
 }

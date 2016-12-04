@@ -7,6 +7,7 @@
         <item name="xbmc_activity_name_minix">MINIX XBMC</item>
         <item name="xbmc_activity_name_beyond">Beyond XBMC</item>
         <item name="xbmc_activity_name_plex">Plex</item>
+        <item name="xbmc_activity_name_plex_legacy">Plex (Legacy)</item>
         <item name="xbmc_activity_name_ouya">OUYA XBMC</item>
         <item name="xbmc_activity_name_spmc">SPMC</item>
         <item name="xbmc_activity_name_spmc_16">SPMC (v16+)</item>
@@ -25,7 +26,8 @@
         <item name="xbmc_activity_string_xbmc">org.xbmc.xbmc/org.xbmc.xbmc.Splash</item>
         <item name="xbmc_activity_string_minix">hk.minix.xbmc/hk.minix.xbmc.Splash</item>
         <item name="xbmc_activity_string_beyond">com.flumpster.xbmc/com.flumpster.xbmc.Splash</item>
-        <item name="xbmc_activity_string_plex">com.plexapp.android/com.plexapp.plex.activities.MyPlexActivity</item>
+        <item name="xbmc_activity_string_plex">com.plexapp.android/com.plexapp.plex.activities.mobile.PickUserActivity</item>
+        <item name="xbmc_activity_string_plex_legacy">com.plexapp.android/com.plexapp.plex.activities.MyPlexActivity</item>
         <item name="xbmc_activity_string_ouya">tv.ouya.xbmc/tv.ouya.xbmc.Splash</item>
         <item name="xbmc_activity_string_spmc">com.semperpax.spmc/com.semperpax.spmc.Splash</item>
         <item name="xbmc_activity_string_spmc_16">com.semperpax.spmc16/com.semperpax.spmc16.Splash</item>

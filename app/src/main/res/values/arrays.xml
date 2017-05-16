@@ -21,6 +21,7 @@
         <item name="xbmc_activity_name_wetek">WeTek Media Player</item>
         <item name="xbmc_activity_name_ftmc">FTMC</item>
         <item name="xbmc_activity_name_zdmc">ZDMC</item>
+        <item name="xbmc_activity_name_ebmc">EBMC/MyGica Media Center</item>
     </string-array>
     
     <string-array name="xbmcActivityStrings">
@@ -43,6 +44,7 @@
         <item name="xbmc_activity_string_wetek">com.wetek.mediaplayer/com.wetek.mediaplayer.Splash</item>
         <item name="xbmc_activity_string_ftmc">org.xbmc.ftmc/org.xbmc.ftmc.Splash</item>
         <item name="xbmc_activity_string_zdmc">com.zidoo.zdmc/com.zidoo.zdmc.Splash</item>
+        <item name="xbmc_activity_string_ebmc">mygica.media.center/mygica.media.center.Splash</item>
     </string-array>
     
 </resources>

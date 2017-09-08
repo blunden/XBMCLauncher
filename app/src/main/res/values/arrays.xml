@@ -10,7 +10,8 @@
         <item name="xbmc_activity_name_plex_legacy">Plex (Legacy)</item>
         <item name="xbmc_activity_name_ouya">OUYA XBMC</item>
         <item name="xbmc_activity_name_spmc">SPMC</item>
-        <item name="xbmc_activity_name_spmc_16">SPMC (v16+)</item>
+        <item name="xbmc_activity_name_spmc_16">SPMC (v16)</item>
+        <item name="xbmc_activity_name_spmc_17">SPMC (v17)</item>
         <item name="xbmc_activity_name_wasser">Wasser XBMC</item>
         <item name="xbmc_activity_name_tvmc_new">TVMC</item>
         <item name="xbmc_activity_name_tvmc">TVMC (Old)</item>
@@ -36,6 +37,7 @@
         <item name="xbmc_activity_string_ouya">tv.ouya.xbmc/tv.ouya.xbmc.Splash</item>
         <item name="xbmc_activity_string_spmc">com.semperpax.spmc/com.semperpax.spmc.Splash</item>
         <item name="xbmc_activity_string_spmc_16">com.semperpax.spmc16/com.semperpax.spmc16.Splash</item>
+        <item name="xbmc_activity_string_spmc_17">com.semperpax.spmc17/com.semperpax.spmc17.Splash</item>
         <item name="xbmc_activity_string_wasser">org.wasser.xbmc/org.wasser.xbmc.Splash</item>
         <item name="xbmc_activity_string_tvmc_new">ag.tvaddons.tvmc/ag.tvaddons.tvmc.Splash</item>
         <item name="xbmc_activity_string_tvmc">ag.tvaddons.xbmc/ag.tvaddons.xbmc.Splash</item>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">XBMC Launcher</string>
-    <string name="app_label_settings">XBMC Launcher Settings</string>
+    <string name="app_name">Launcher for XBMC</string>
+    <string name="app_label_settings">Launcher for XBMC Settings</string>
     
     <string name="settings_category_basic_settings">Basic Settings</string>
     <string name="settings_category_troubleshooting">Troubleshooting</string>
     
-    <string name="settings_xbmc_variant_title">XBMC variant</string>
-    <string name="settings_xbmc_variant_summary">Select your XBMC variant</string>
+    <string name="settings_xbmc_variant_title">XBMC/Kodi variant</string>
+    <string name="settings_xbmc_variant_summary">Select your XBMC/Kodi variant</string>
     <string name="settings_reset_default_title">Reset default launcher</string>
     <string name="settings_app_details_title">App details</string>
-    <string name="settings_app_details_summary">Manage or uninstall XBMC Launcher via Settings</string>
+    <string name="settings_app_details_summary">Manage or uninstall Launcher for XBMC via Settings</string>
     <string name="settings_android_settings_title">Android settings</string>
     <string name="settings_android_settings_summary">Launch Android\'s main settings interface</string>
     

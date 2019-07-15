@@ -15,6 +15,7 @@ public class LauncherSettingsActivity extends Activity {
                 .commit();
     }
 	
+	@SuppressWarnings("deprecation")
 	public static class SettingsFragment extends PreferenceFragment {
 	    @Override
 	    public void onCreate(Bundle savedInstanceState) {

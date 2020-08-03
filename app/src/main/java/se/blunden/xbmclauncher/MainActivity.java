@@ -6,6 +6,8 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -31,6 +33,11 @@ public class MainActivity extends Activity {
         activityIntent.addCategory(Intent.CATEGORY_HOME);
 		
 		try {
+			//check if connected!
+			while (!isNetworkAvailable()) {
+				//Wait to connect
+				Thread.sleep(1000);
+			}
 			startActivity(activityIntent);
         }
 		catch (ActivityNotFoundException e)	{
@@ -54,5 +61,12 @@ public class MainActivity extends Activity {
 	private void launchSettings() {
 		Intent launchSettings = new Intent(this, LauncherSettingsActivity.class);
 		startActivity(launchSettings);
+	}
+
+	private boolean isNetworkAvailable() {
+		ConnectivityManager connectivityManager
+				= (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+		NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+		return activeNetworkInfo != null && activeNetworkInfo.isConnected();
 	}
 }

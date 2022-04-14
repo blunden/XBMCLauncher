@@ -31,6 +31,7 @@ public class MainActivity extends Activity {
          * stack as needed for the system to broadcast BOOT_COMPLETED.
          */
         activityIntent.addCategory(Intent.CATEGORY_HOME);
+        activityIntent.addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
 		
 		try {
 			//check if connected!

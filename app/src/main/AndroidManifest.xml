@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="se.blunden.xbmclauncher"
-    android:versionCode="25"
-    android:versionName="3.5" >
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
     
     <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -19,7 +16,8 @@
             android:clearTaskOnLaunch="true"
         	android:stateNotNeeded="true"
         	android:excludeFromRecents="true"
-        	android:launchMode="singleTask" >
+        	android:launchMode="singleTask"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.HOME" />
@@ -28,7 +26,8 @@
         </activity>
         <activity
             android:name="se.blunden.xbmclauncher.LauncherSettingsActivity"
-            android:label="@string/app_label_settings" >
+            android:label="@string/app_label_settings"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

@@ -1,12 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 34
 
     defaultConfig {
         applicationId "se.blunden.xbmclauncher"
         minSdkVersion 14
-        targetSdkVersion 29
+        targetSdkVersion 34
+        versionCode 25
+        versionName "3.5"
     }
 
     buildTypes {
@@ -15,4 +17,5 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+    namespace 'se.blunden.xbmclauncher'
 }

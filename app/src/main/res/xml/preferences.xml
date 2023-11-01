@@ -11,7 +11,21 @@
             android:summary="@string/settings_xbmc_variant_summary"
             android:defaultValue="@string/xbmc_activity_default"
             android:entries="@array/xbmcActivityNames"
-            android:entryValues="@array/xbmcActivityStrings" />   
+            android:entryValues="@array/xbmcActivityStrings" />
+
+		<SwitchPreference
+			android:key="override_xbmc_variant"
+			android:title="@string/settings_xbmc_override_title"
+			android:summary="@string/settings_xbmc_override_summary"
+			android:defaultValue="false" />
+
+		<EditTextPreference
+			android:key="xbmc_custom_variant"
+			android:title="@string/settings_xbmc_custom_variant_title"
+			android:summary=""
+			android:defaultValue=""
+			android:hint="@string/settings_xbmc_custom_variant_hint"
+			android:enabled="false"/>
              
     </PreferenceCategory>
 

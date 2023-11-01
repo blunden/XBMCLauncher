@@ -9,6 +9,10 @@
     
     <string name="settings_xbmc_variant_title">XBMC/Kodi variant</string>
     <string name="settings_xbmc_variant_summary">Select your XBMC/Kodi variant</string>
+    <string name="settings_xbmc_override_title">Allow custom variant</string>
+    <string name="settings_xbmc_override_summary">Warning: Ensure you enable and configure ADB before enabling this option to avoid the risk of being locked out!</string>
+    <string name="settings_xbmc_custom_variant_title">Custom variant</string>
+    <string name="settings_xbmc_custom_variant_hint">org.xbmc.kodi/org.xbmc.kodi.Splash</string>
     <string name="settings_reset_default_title">Reset default launcher</string>
     <string name="settings_app_details_title">App details</string>
     <string name="settings_app_details_summary">Manage or uninstall Launcher for XBMC via Settings</string>
@@ -16,5 +20,6 @@
     <string name="settings_android_settings_summary">Launch Android\'s main settings interface</string>
     
     <string name="xbmc_activity_default">org.xbmc.kodi/org.xbmc.kodi.Splash</string>
+    <string name="xbmc_package_default">org.xbmc.kodi</string>
 
 </resources>

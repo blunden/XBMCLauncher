@@ -74,7 +74,7 @@ public class MainActivity extends Activity {
 
 	private static boolean validateActivityString(String activityString) {
 		// Try to make a rough regex validation of the provided activity string
-		final Pattern pattern = Pattern.compile("[A-Za-z0-9]+\\.[A-Za-z0-9]+\\.[A-Za-z0-9]+/[A-Za-z0-9]+\\.[A-Za-z0-9]+\\.[A-Za-z0-9]+\\.[A-Za-z0-9]+", Pattern.CASE_INSENSITIVE);
+		final Pattern pattern = Pattern.compile("([A-Za-z0-9]+\\.)+[A-Za-z0-9]+/([A-Za-z0-9]+\\.)+[A-Za-z0-9]+", Pattern.CASE_INSENSITIVE);
 		final Matcher matcher = pattern.matcher(activityString);
 
 		return matcher.matches();

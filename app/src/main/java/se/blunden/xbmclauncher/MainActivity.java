@@ -6,6 +6,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
@@ -38,13 +39,26 @@ public class MainActivity extends Activity {
 		// Build the Kodi/XBMC intent
         Intent activityIntent;
         activityIntent = new Intent(Intent.ACTION_MAIN);
-        activityIntent.setComponent(ComponentName.unflattenFromString(xbmcActivity));
-        /*
-         * The launched activity will be considered the HOME activity and will be on top of the
-         * stack as needed for the system to broadcast BOOT_COMPLETED.
-         */
-        activityIntent.addCategory(Intent.CATEGORY_HOME);
-        activityIntent.addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+		activityIntent.setComponent(ComponentName.unflattenFromString(xbmcActivity));
+
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+			/* Android 13 and later requires the intent action and category to match the target activity's
+			 * intent filter for apps targeting this API level or higher. The current choice is based on
+			 * what Kodi uses.
+			 *
+			 * The cleaner solution would be to simply query the target app, but this requires
+			 * specifying every single package name we want to be able to query on Android 11 or later,
+			 * which naturally won't work for custom forks specified by the user.
+			 */
+			activityIntent.addCategory(Intent.CATEGORY_LAUNCHER);
+		} else {
+			/*
+			 * The launched activity will be considered the HOME activity and will be on top of the
+			 * stack as needed for the system to broadcast BOOT_COMPLETED.
+			 */
+			activityIntent.addCategory(Intent.CATEGORY_HOME);
+		}
+		activityIntent.addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
 
 		try {
 			startActivity(activityIntent);

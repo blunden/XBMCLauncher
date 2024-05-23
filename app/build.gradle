@@ -7,8 +7,8 @@ android {
         applicationId "se.blunden.xbmclauncher"
         minSdkVersion 14
         targetSdkVersion 34
-        versionCode 28
-        versionName "3.4.2"
+        versionCode 29
+        versionName "3.4.3"
     }
 
     buildTypes {
